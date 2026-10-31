@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "blackclient",
+  "version": "${version}",
+  "name": "Black Client",
+  "description": "Custom animated title menu for Minecraft Java 1.21.4.",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.blackclient.BlackClient"] },
+  "mixins": ["blackclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
